@@ -29,28 +29,61 @@
     <main class="container">
       <h1 class="visually-hidden">device-shop</h1>
       <section class="main-products">
-        <a href="#"><img src="#" alt="selfie-stick"></a>
-        <p class="ben">Делай селфи, как Бен Стиллер!</p>
-        <p>Самая длинная палка для селфи доступна в нашем магазине.
-          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-        <a class="button" href="#">подробнее</a>
-        <ul>
-          <li><input type="radio" value="photo-1"></li>
-          <li><input type="radio" value="photo-2"></li>
-          <li><input type="radio" value="photo-3"></li>
-        </ul>
-        <table class="product-info">
-          <tr>
-            <td>8,5 м</td>
-            <td>5 кг</td>
-            <td>Карбон</td>
-          </tr>
-          <tr>
-            <td>Длина палки</td>
-            <td>Вес палки</td>
-            <td>Материал</td>
-          </tr>
-        </table>
+        <h2 class="visually-hidden">Топ товаров</h2>
+          <ul class="radio">
+              <li><input type="radio" value="product-1"></li>
+              <li><input type="radio" value="product-2"></li>
+              <li><input type="radio" value="product-3"></li>
+          </ul>
+          <div class="product-1">
+              <a href="#"><img src="#" alt="селфи-палка"></a>
+              <h3 class="selfie">Делай селфи, как Бен Стиллер!</h3>
+              <p>Самая длинная палка для селфи доступна в нашем магазине.
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a class="button" href="#">подробнее</a>
+              <table class="product-info">
+                <tr>
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr>
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
+          </div>
+          <div class="product-2">
+            <a href="#"><img src="#" alt="фитнес-браслет"></a>
+            <h3 class="watches">Худеем правильно!</h3>
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a class="button" href="#">подробнее</a>
+            <table class="product-info">
+              <tr>
+                <td>48 часов</td>
+              </tr>
+              <tr>
+                <td>Без подзарядки</td>
+              </tr>
+            </table>
+          </div>
+          <div class="product-3">
+            <a href="#"><img src="#" alt="квадрокоптер"></a>
+            <h3 class="copter">Порхает как бабочка, жалит как пчела!</h3>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <a class="button" href="#">подробнее</a>
+            <table class="product-info">
+              <tr>
+                <td>800 м</td>
+                <td>50 м</td>
+              </tr>
+              <tr>
+                <td>Дальность полета</td>
+                <td>Радиус поражения</td>
+              </tr>
+            </table> 
+          </div>   
       </section>
       <section class="product-list">
         <h2 class="visually-hidden">Категории товаров</h2>
@@ -115,7 +148,17 @@
         <div class="delivery">
           <h3>доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          <span class="icon delivery"></span>
+          <span class="icon-delivery"></span>
+        </div>
+        <div class="warranty">
+          <h3>гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          <span class="icon-warranty"></span>
+        </div>
+        <div class="credit">
+            <h3>кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <span class="icon-credit"></span>
         </div>
       </section>
       <section class="partners">
