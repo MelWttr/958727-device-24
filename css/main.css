@@ -171,7 +171,7 @@ header a:active {
   line-height: 1.33;
 }
 
-.product-category a::before {
+.category-link::before {
   content: "";
   width: 160px;
   height: 160px;
@@ -179,18 +179,13 @@ header a:active {
   background-color: rgba(240, 197, 46, 0.5);
 }
 
-.product-category a:hover::before {
+.category-link:hover::before {
 
   background-color: rgba(240, 197, 46, 1);
 }
 
-.product-category a:active::before {
 
-  background-color: rgba(240, 197, 46, 1);
-
-}
-
-.product-category a:active h3 {
+.category-link:active h3 {
 
   color: rgba(0, 0, 0, 0.3);
 }
