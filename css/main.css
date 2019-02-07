@@ -55,6 +55,13 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+
+  box-sizing: inherit;
+}
+
 body {
 
   font-family: 'OpenSans', Arial, sans-serif;
@@ -97,7 +104,6 @@ header a:active {
 }
 
 .catalog {
-
   font-family: 'OpenSans', Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -114,19 +120,17 @@ header a:active {
 
 .breadcrumps-item a {
 
-  font-family: 'OpenSans', Arial, sans-serif;
   font-size: 14px;
-  font-weight: 300;
   line-height: 1.71;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.breadcrumps-item a:hover {
+.breadcrumps-item:not(.breadcrumbs-item-current) a:hover {
 
   opacity: 0.6;
 }
 
-.breadcrumps-item a:active {
+.breadcrumps-item:not(.breadcrumbs-item-current) a:active {
 
   opacity: 0.1;
 }
@@ -155,9 +159,7 @@ header a:active {
 
 .product-info tr {
 
-  font-family: 'OpenSans', Arial, sans-serif;
   font-size: 13px;
-  font-weight: 300;
   line-height: 1.54;
 }
 
@@ -251,9 +253,7 @@ header a:active {
 
 .filter label {
 
-  font-family: 'OpenSans', Arial, sans-serif;
   font-size: 14px;
-  font-weight: 300;
   line-height: 2.86;
   letter-spacing: 0.1px;
 }
@@ -264,6 +264,13 @@ header a:active {
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5;
+}
+
+.sort-button {
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.29;
 }
 
 .sort-button:not(.sort-current) {
@@ -281,7 +288,7 @@ header a:active {
   color: #000000;
 }
 
-article a {
+.product-item a {
 
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
@@ -289,7 +296,7 @@ article a {
   line-height: 1.33;
 }
 
-article span {
+.product-item span {
 
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 16px;
@@ -397,7 +404,6 @@ footer {
 
 .letter-item::placeholder {
 
-  font-family: 'OpenSans', Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.29;
@@ -411,9 +417,7 @@ footer {
 
 .compare-btn {
 
-  font-family: 'OpenSans', Arial, sans-serif;
   font-size: 13px;
-  font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.54;
