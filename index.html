@@ -22,10 +22,12 @@
         </svg></a></div>
     <div class="user-form">
       <form action="https://echo.htmlacademy.ru" method="POST">
-        <input type="search" name="search" id="search">
+        <label for="search"></label>
+        <input type="text" name="search" id="search" placeholder="Поиск по сайту">
+        <button type="submit">Найти</button>
       </form>
       <ul class="list user-menu-top">
-        <li><a class="check-in" href="#">
+        <li><a class="user-top-link login" href="#">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
               <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
@@ -33,7 +35,7 @@
             </svg>
             <span>Войти</span>
           </a></li>
-        <li><a class="compare" href="#">
+        <li><a class="user-top-link" href="#">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
               <rect x="8" y="2" width="1.984" height="8" />
@@ -42,7 +44,7 @@
             </svg>
             <span>Сравнить</span>
           </a></li>
-        <li><a class="basket" href="#">
+        <li><a class="user-top-link" href="#">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
               <g>
@@ -60,21 +62,23 @@
       </ul>
     </div>
     <nav class="header-menu">
-      <ul class="list main-menu-top">
-        <li class>
-          <a href="#">Каталог товаров</a>
-          <ul class="catalog">
-            <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
-            <li class="catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
-            <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
-            <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
-            <li class="catalog-item"><a href="#">Умные часы</a></li>
-            <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
-          </ul>
+      <ul class="main-menu-top list">
+        <li>
+          <a class="catalog-link" href="#">Каталог товаров</a>
+          <div class="catalog-wrapper">
+            <ul class="catalog list">
+              <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
+              <li class="catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
+              <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
+              <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
+              <li class="catalog-item"><a href="#">Умные часы</a></li>
+              <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </div>
         </li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li class="main-menu-delivery"><a href="#">Доставка</a></li>
+        <li class="main-menu-warranty"><a href="#">Гарантия</a></li>
+        <li class="main-menu-contacts"><a href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
