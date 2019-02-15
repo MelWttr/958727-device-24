@@ -223,19 +223,21 @@ header {
 }
 
 .user-form {
-  padding: 19px 0;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.user-form form {
+  min-height: 60px;
+}
+
 .user-form input {
   width: 392px;
+  min-height: 47px;
   margin: 0;
   padding-left: 36px;
-  padding-bottom: 14px;
-
-
   border: none;
   border-bottom: 2px solid transparent;
   background: none;
@@ -274,33 +276,31 @@ header {
 }
 
 .user-form button {
-  display: inline;
+  display: none;
   width: 85px;
   height: 49px;
   margin-left: -4px;
-  margin-bottom: -5px;
-
-
   background: none;
   border: 2px solid black;
   outline: 0;
-  opacity: 0;
 
   cursor: pointer;
 }
 
 .user-form input:focus~button {
-  opacity: 1;
+  display: inline-block;
 }
 
 .user-form input:focus~button:hover {
+  display: inline-block;
+
   color: rgba(255, 255, 255, 1);
 
   background-color: black;
 }
 
-.user-form input:focus~button:active {
-  opacity: 1;
+button:active {
+  display: inline-block;
 
   color: rgba(255, 255, 255, 0.3);
 
