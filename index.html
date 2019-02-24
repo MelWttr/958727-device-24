@@ -27,7 +27,7 @@
         <button type="submit">Найти</button>
       </form>
       <ul class="list user-menu-top">
-        <li><a class="user-link login" href="#">
+        <li class="user-menu-item"><a class="user-link" href="#">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
               <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
@@ -35,7 +35,7 @@
             </svg>
             <span>Войти</span>
           </a></li>
-        <li><a class="user-link" href="#">
+        <li class="user-menu-item"><a class="user-link" href="#">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
               <rect x="8" y="2" width="1.984" height="8" />
@@ -44,7 +44,7 @@
             </svg>
             <span>Сравнить</span>
           </a></li>
-        <li><a class="user-link" href="#">
+        <li class="user-menu-item"><a class="user-link" href="#">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
               <g>
@@ -68,11 +68,11 @@
           <div class="catalog-wrapper">
             <ul class="catalog list">
               <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
-              <li class="catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
-              <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
-              <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
-              <li class="catalog-item"><a href="#">Умные часы</a></li>
+              <li class="catalog-item"><a href="catalog.html">Фитнес-браслеты</a></li>
               <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
+              <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
+              <li class="catalog-item"><a href="#">Умные часы</a></li>
+              <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
             </ul>
           </div>
         </li>
@@ -82,25 +82,28 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="main-container">
     <h1 class="visually-hidden index-title">Главная страница Device-shop</h1>
-    <div class="container">
+    <div class="main-centerer">
       <section class="main-products">
         <h2 class="visually-hidden">Топ товаров</h2>
-        <input class="visually-hidden radio-one" type="radio" name="switcher" value="product-1" id="product-1" checked>
-        <input class="visually-hidden radio-two" type="radio" name="switcher" value="product-2" id="product-2">
-        <input class="visually-hidden radio-three" type="radio" name="switcher" value="product-3" id="product-3">
-        <ul class="list radio">
-          <li>
-            <label class="radio-button radio-button-first" for="product-1">Первый</label>
-          </li>
-          <li class="radio-item">
-            <label class="radio-button radio-button-second" for="product-2">Второй</label>
-          </li>
-          <li class="radio-item">
-            <label class="radio-button radio-button-third" for="product-3">Третий</label>
-          </li>
-        </ul>
+        <input class="visually-hidden top-products-input top-products-input-1" id="product-1" type="radio" name="switcher"
+          value="product-1" checked>
+        <input class="visually-hidden top-products-input top-products-input-2" id="product-2" type="radio" name="switcher"
+          value="product-2">
+        <input class="visually-hidden top-products-input top-products-input-3" type="radio" id="product-3" name="switcher"
+          value="product-3">
+        <div class="top-products-switchers">
+          <label class="top-products-radio" for="product-1" aria-label="слайд первый">
+            <span class="product-switch-btn product-switch-btn-1"></span>
+          </label>
+          <label class="top-products-radio" for="product-2" aria-label="слайд второй">
+            <span class="product-switch-btn product-switch-btn-2"></span>
+          </label>
+          <label class="top-products-radio" for="product-3" aria-label="слайд третий">
+            <span class="product-switch-btn product-switch-btn-3"></span>
+          </label>
+        </div>
         <div class="product slide-1">
           <figure class="part product-image">
             <img src="img/slider-1.png" alt="селфи-палка" width="384" height="486">
@@ -431,14 +434,17 @@
         </div>
       </div>
     </section>
-    <div class="container">
+    <div class="main-centerer">
       <section class="partners">
         <h2 class="visually-hidden">Партнеры</h2>
         <ul class="list partners-logo">
-          <li class="partner"><a href="#"><img src="img/dgi_logo.png" alt="DGI" width="260" height="100"></a></li>
-          <li class="partner"><a href="#"><img src="img/spgadgets_logo.png" alt="SP Gadjets" width="260" height="100"></a></li>
-          <li class="partner"><a href="#"><img src="img/gopro_logo.png" alt="GoPro" width="260" height="100"></a></li>
-          <li class="partner"><a href="#"><img src="img/vive_logo.png" alt="VIVE" width="260" height="100"></a></li>
+          <li class="partner"><a class="partner-link" href="#"><img src="img/dgi_logo.png" alt="DGI" width="260" height="100"></a></li>
+          <li class="partner"><a class="partner-link" href="#"><img src="img/spgadgets_logo.png" alt="SP Gadjets" width="260"
+                height="100"></a></li>
+          <li class="partner"><a class="partner-link" href="#"><img src="img/gopro_logo.png" alt="GoPro" width="260"
+                height="100"></a></li>
+          <li class="partner"><a class="partner-link" href="#"><img src="img/vive_logo.png" alt="VIVE" width="260"
+                height="100"></a></li>
         </ul>
       </section>
       <div class="info-wrapper">
@@ -459,13 +465,13 @@
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
             работоспособность покупки.
             Всякое бывает.</p>
-          <a class="map" href="#"><img src="img/map.png" alt="улица строителей 15" width="560" height="220"></a>
+          <a href="#"><img src="img/map.png" alt="улица строителей 15" width="560" height="220"></a>
           <a class="button" href="#">напишите нам</a>
         </section>
       </div>
     </div>
   </main>
-  <footer>
+  <footer class="main-footer">
     <div class="footer-wrapper">
       <div class="footer-top">
         <div class="logo-bottom">
@@ -481,16 +487,15 @@
           </a>
         </div>
         <ul class="list user-menu-bottom">
-          <li><a class="user-link" href="#">
+          <li class="user-menu-item"><a class="user-link" href="#">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                 y="0px" width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
                 <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
-                C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z" />
+                    C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z" />
               </svg>
               <span>Войти</span>
-            </a>
-          </li>
-          <li><a class="user-link" href="#">
+            </a></li>
+          <li class="user-menu-item"><a class="user-link" href="#">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                 y="0px" width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
                 <rect x="8" y="2" width="1.984" height="8" />
@@ -499,17 +504,17 @@
               </svg>
               <span>Сравнить</span>
             </a></li>
-          <li><a class="user-link" href="#">
+          <li class="user-menu-item"><a class="user-link" href="#">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                 y="0px" width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
                 <g>
                   <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
-                  c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438
-                  c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595
-                  c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z" />
+                      c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438
+                      c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595
+                      c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z" />
                   <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079
-                  c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84
-                  C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z" />
+                      c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84
+                      C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z" />
                 </g>
               </svg>
               <span>Корзина</span>
@@ -580,26 +585,32 @@
       </div>
     </div>
   </footer>
-  <form class="popup letter" action="https://echo.htmlacademy.ru" method="POST">
+  <section class="popup letter">
+    <form class="letter-form" action="https://echo.htmlacademy.ru" method="POST">
+      <p>
+        <label for="username">Ваше имя:</label>
+        <input class="letter-item user-data" type="text" name="username" id="username" pattern="[A-Za-zА-Яа-яЁё]{2,20} [A-Za-zА-Яа-яЁё]{2,20}"
+          placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="usermail">Ваш e-mail:</label>
+        <input class="letter-item user-data" type="email" name="usermail" id="usermail" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="usertext">Текст письма:</label>
+        <textarea class="letter-item user-text" name="usertext" id="usertext" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button letter-submit-btn" type="submit">Отправить</button>
+    </form>
     <button class="close-modal-btn" aria-label="Закрыть окно">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
         y="0px" width="55px" height="55px" viewBox="0 0 55 55" enable-background="new 0 0 55 55" xml:space="preserve">
         <path fill="#F0C52E" d="M27.5,0C12.312,0,0,12.312,0,27.5C0,42.688,12.312,55,27.5,55C42.688,55,55,42.688,55,27.5
-	C55,12.312,42.688,0,27.5,0z M38.976,37.072l-1.486,1.426L27.5,28.924l-9.987,9.574l-1.488-1.426l9.988-9.573l-9.987-9.573
-	l1.487-1.425l9.987,9.573l9.988-9.573l1.487,1.425L28.986,27.5L38.976,37.072z" />
+      C55,12.312,42.688,0,27.5,0z M38.976,37.072l-1.486,1.426L27.5,28.924l-9.987,9.574l-1.488-1.426l9.988-9.573l-9.987-9.573
+      l1.487-1.425l9.987,9.573l9.988-9.573l1.487,1.425L28.986,27.5L38.976,37.072z" />
       </svg>
     </button>
-    <fieldset>
-      <input class="letter-item" type="text" name="username" id="username" pattern="[A-Za-zА-Яа-яЁё]{2,20} [A-Za-zА-Яа-яЁё]{2,20}"
-        placeholder="Имя Фамилия">
-      <label for="username">Ваше имя:</label>
-      <input class="letter-item" type="email" name="usermail" id="usermail" placeholder="email@example.com">
-      <label for="usermail">Ваш e-mail:</label>
-      <textarea class="letter-item" name="usertext" id="usertext" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      <label for="usertext">Текст письма:</label>
-    </fieldset>
-    <button class="button letter-submit-btn" type="submit">Отправить</button>
-  </form>
+  </section>
   <section class="popup map" aria-label="окно с картой месторасположения">
     <button class="close-modal-btn" aria-label="Закрыть окно">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
