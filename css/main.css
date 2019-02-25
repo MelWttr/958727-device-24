@@ -488,6 +488,12 @@ header a:active {
   bottom: 162px;
 }
 
+.top-products-input-1:focus~.top-products-switchers .product-switch-btn-1,
+.top-products-input-2:focus~.top-products-switchers .product-switch-btn-2,
+.top-products-input-3:focus~.top-products-switchers .product-switch-btn-3 {
+  outline: 2px solid lightblue;
+}
+
 .top-products-input-1:checked~.top-products-switchers .product-switch-btn-1,
 .top-products-input-2:checked~.top-products-switchers .product-switch-btn-2,
 .top-products-input-3:checked~.top-products-switchers .product-switch-btn-3 {
@@ -906,13 +912,20 @@ header a:active {
   background-color: #000000;
 }
 
+#delivery-radio:checked:focus~.services-menu .delivery-btn::after,
+#warranty-radio:checked:focus~.services-menu .warranty-btn::after,
+#credit-radio:checked:focus~.services-menu .credit-btn::after {
+  outline: 3px solid #f7d230;
+}
+
 .services-menu li:not(:first-child) {
   margin-top: 25px;
 }
 
 .service {
-  display: none;
   position: relative;
+
+  display: none;
   margin-top: -25px;
   width: 460px;
 }
@@ -934,6 +947,7 @@ header a:active {
   position: absolute;
   top: 5px;
   right: -232px;
+
   width: 136px;
   height: 164px;
 
@@ -946,6 +960,7 @@ header a:active {
   position: absolute;
   top: 5px;
   right: -262px;
+
   width: 171px;
   height: 194px;
 
@@ -958,6 +973,7 @@ header a:active {
   position: absolute;
   top: 5px;
   right: -220px;
+
   width: 156px;
   height: 186px;
 
@@ -998,22 +1014,23 @@ header a:active {
 }
 
 .partners-logo {
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
 .info-wrapper {
+  display: flex;
   margin: 0 auto;
   padding: 0;
-  display: flex;
   justify-content: space-between;
 }
 
 .info-wrapper h2 {
   position: relative;
+
   margin-top: 3px;
 
 
@@ -1028,6 +1045,7 @@ header a:active {
 
   position: absolute;
   top: -51px;
+
   width: 80px;
   height: 7px;
 
@@ -1064,6 +1082,7 @@ header a:active {
 
 .delivery-companies li {
   position: relative;
+
   padding-left: 33px;
   padding-top: 0;
 
@@ -1080,6 +1099,7 @@ header a:active {
   position: absolute;
   left: 0;
   top: 40%;
+
   width: 8px;
   height: 8px;
 
@@ -1088,9 +1108,9 @@ header a:active {
 }
 
 .contacts {
+  display: flex;
   width: 50%;
   margin-left: 35px;
-  display: flex;
   flex-direction: column;
 }
 
@@ -1109,9 +1129,9 @@ header a:active {
 }
 
 .gradient-wrapper {
-  width: 100%px;
-  margin: 5px auto 0;
   display: flex;
+  width: 100%;
+  margin: 5px auto 0;
   justify-content: center;
 }
 
@@ -1130,10 +1150,10 @@ header a:active {
 .filter {
   position: relative;
 
+  display: flex;
   width: 300vw;
   margin: 0;
   padding: 0;
-  display: flex;
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-end;
@@ -1199,7 +1219,7 @@ header a:active {
   content: "";
 
   position: absolute;
-  top: -13px;
+  margin-top: -53px;
   left: -2px;
 
   width: 200px;
@@ -1207,6 +1227,10 @@ header a:active {
 
 
   background-color: #000000;
+}
+
+.filter fieldset:first-of-type::before {
+  margin-top: -33px;
 }
 
 .filter fieldset:first-of-type {
@@ -1334,13 +1358,13 @@ header a:active {
   border-radius: 2px;
 }
 
-/* .color-input:focus+.color-box {
+.color-input:focus+.color-box {
   box-shadow: 0 0 0 2px lightskyblue;
 }
 
 .color-input:checked:focus+.color-box {
   box-shadow: 0 0 0 2px lightskyblue;
-} */
+}
 
 .color-input:hover+.color-box {
   opacity: 0.6;
@@ -1389,13 +1413,13 @@ header a:active {
 .bluetooth-rbtn::before {
   content: "";
 
-  display: none;
-
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%);
 
+
+  display: none;
+  transform: translate(-50%);
   margin-top: -5px;
   width: 10px;
   height: 10px;
@@ -1406,6 +1430,14 @@ header a:active {
 
 .bluetooth-rbtn:hover {
   opacity: 0.6;
+}
+
+.bluetooth-input:focus+.bluetooth-rbtn {
+  box-shadow: 0 0 0 2px lightskyblue;
+}
+
+.bluetooth-input:checked:focus+.bluetooth-rbtn {
+  box-shadow: 0 0 0 2px lightskyblue;
 }
 
 .bluetooth-input:checked+.bluetooth-rbtn::before {
@@ -1433,11 +1465,11 @@ header a:active {
 .sort {
   position: relative;
 
+  display: flex;
   width: 300vw;
   padding: 0;
   padding-right: 11.5vw;
   padding-bottom: 75px;
-  display: flex;
   flex-flow: column;
   justify-content: flex-start;
   align-content: flex-start;
@@ -1466,10 +1498,10 @@ header a:active {
 }
 
 .sort-wrapper {
+  display: flex;
   width: 760px;
   margin: 0;
   margin-left: 75px;
-  display: flex;
   flex-flow: column;
   justify-content: flex-start;
 }
@@ -1488,8 +1520,8 @@ header a:active {
 
 
 .arrows {
-  width: 60px;
   display: flex;
+  width: 60px;
   justify-content: space-between;
 }
 
@@ -1508,8 +1540,8 @@ header a:active {
 }
 
 .items-wrapper {
-  margin-top: 40px;
   display: flex;
+  margin-top: 40px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -1585,9 +1617,9 @@ header a:active {
 }
 
 .product-item-info {
+  display: flex;
   margin-top: 25px;
   margin-bottom: 16px;
-  display: flex;
   justify-content: space-between;
 }
 
@@ -1647,7 +1679,7 @@ header a:active {
 
 .pagination-button {
   width: 136px;
-  height: 100%;
+  min-height: 70px;
   padding-top: 25px;
 
   text-align: center;
@@ -1721,10 +1753,10 @@ footer svg {
 }
 
 .main-menu-bottom {
+  display: flex;
   margin: 0;
   padding: 0;
   width: 460px;
-  display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -1732,6 +1764,7 @@ footer svg {
 .main-menu-bottom li {
   margin-right: 33px;
   padding-top: 7px;
+
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -1747,10 +1780,10 @@ footer svg {
 .social {
   position: relative;
 
+  display: flex;
   margin: 0;
   padding: 0;
   margin-left: 510px;
-  display: flex;
   justify-content: space-between;
 }
 
@@ -1786,9 +1819,9 @@ footer svg {
 }
 
 .user-menu-bottom {
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
@@ -1854,12 +1887,12 @@ footer svg {
   left: 50%;
   transform: translate(-50%);
 
-  /* display: flex; */
   display: none;
   justify-content: center;
   align-items: center;
   width: 960px;
   height: 553px;
+
   text-align: center;
 
   background-color: #ffffff;
@@ -1900,8 +1933,10 @@ footer svg {
   margin: 0;
   margin-top: 8px;
   padding: 0;
-  text-align: left;
   width: 360px;
+
+  text-align: left;
+
 }
 
 .user-data {
@@ -1993,13 +2028,14 @@ footer svg {
 
 .map {
   position: absolute;
+  top: 1850px;
+  left: 50%;
+  transform: translateX(-50%);
+
 
   display: none;
   width: 960px;
   height: 559px;
-  top: 1850px;
-  left: 50%;
-  transform: translateX(-50%);
 
   background-image: url(../img/map_big_jpg.jpg);
   background-repeat: no-repeat;
