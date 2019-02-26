@@ -1881,9 +1881,9 @@ footer svg {
 }
 
 .letter {
-  position: absolute;
+  position: fixed;
   z-index: 5;
-  top: 1050px;
+  top: 20%;
   left: 50%;
   transform: translate(-50%);
 
@@ -2027,18 +2027,30 @@ footer svg {
 }
 
 .map {
-  position: absolute;
-  top: 1850px;
+  position: fixed;
+  top: 20%;
   left: 50%;
-  transform: translateX(-50%);
-
 
   display: none;
   width: 960px;
   height: 559px;
 
-  background-image: url(../img/map_big_jpg.jpg);
-  background-repeat: no-repeat;
+}
+
+.map iframe {
+  position: relative;
+  width: 100%;
+
+  z-index: 2;
+}
+
+.map-static-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
 }
 
 .close-modal-btn {
@@ -2046,6 +2058,7 @@ footer svg {
   display: inline-block;
   top: 22px;
   right: 22px;
+  z-index: 3;
 
   background: none;
   border-radius: 50%;
@@ -2063,4 +2076,8 @@ footer svg {
 
 .close-modal-btn:active {
   opacity: 0.3;
+}
+
+.modal-show {
+  display: flex;
 }
