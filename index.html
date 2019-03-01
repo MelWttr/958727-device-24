@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="css/main_min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -107,7 +107,7 @@
         </div>
         <div class="product slide-1">
           <figure class="part product-image">
-            <img src="img/slider-1.png" alt="селфи-палка" width="384" height="486">
+            <img src="img/slider_1.png" alt="селфи-палка" width="384" height="486">
           </figure>
           <div class="product-description part">
             <h3 class="slogan">Делай селфи,<br> как Бен Стиллер!</h3>
@@ -130,7 +130,7 @@
         </div>
         <div class="product slide-2">
           <figure class="part product-image">
-            <img src="img/slider-2.png" alt="фитнес-браслет" width="345" height="485">
+            <img src="img/slider_2.png" alt="фитнес-браслет" width="345" height="485">
           </figure>
           <div class="product-description part">
             <h3 class="slogan">Худеем<br> правильно!</h3>
@@ -148,7 +148,7 @@
         </div>
         <div class="product slide-3">
           <figure class="part product-image">
-            <img src="img/slider-3.png" alt="квадрокоптер с лазером" width="526" height="334">
+            <img src="img/slider_3.png" alt="квадрокоптер с лазером" width="526" height="334">
           </figure>
           <div class="product-description part">
             <h3 class="slogan">Порхает как бабочка, жалит как пчела!</h3>
@@ -454,14 +454,21 @@
       <section class="partners">
         <h2 class="visually-hidden">Партнеры</h2>
         <ul class="list partners-logo">
-          <li class="partner"><a class="partner-link" href="#"><img src="img/dgi_logo.png" alt="DGI" width="260"
-                height="100"></a></li>
-          <li class="partner"><a class="partner-link" href="#"><img src="img/spgadgets_logo.png" alt="SP Gadjets"
-                width="260" height="100"></a></li>
-          <li class="partner"><a class="partner-link" href="#"><img src="img/gopro_logo.png" alt="GoPro" width="260"
-                height="100"></a></li>
-          <li class="partner"><a class="partner-link" href="#"><img src="img/vive_logo.png" alt="VIVE" width="260"
-                height="100"></a></li>
+          <li class="partner"><a class="partner-link" href="#">
+              <img class="color" src="img/dgi_logo.png" alt="DGI" width="260" height="100" width="260" height="100">
+              <img class="grayscale" src="img/dgi_logo_gray.png" alt="DGI" width="260" height="100"></a></li>
+          <li class="partner"><a class="partner-link" href="#">
+              <img class="color" src="img/spgadgets_logo.png" alt="SP Gadjets" width="260" height="100">
+              <img class="grayscale" src="img/sp_gadjets_logo_gray.png" alt="SP Gadjets" width="260" height="100">
+            </a></li>
+          <li class="partner"><a class="partner-link" href="#">
+              <img class="color" src="img/gopro_logo.png" alt="GoPro" width="260" height="100">
+              <img class="grayscale" src="img/gopro_logo_gray.png" alt="GoPro" width="260" height="100">
+            </a></li>
+          <li class="partner"><a class="partner-link" href="#">
+              <img class="color" src="img/vive_logo.png" alt="VIVE" width="260" height="100">
+              <img class="grayscale" src="img/vive_logo_gray.png" alt="VIVE" width="260" height="100">
+            </a></li>
         </ul>
       </section>
       <div class="info-wrapper">
@@ -482,7 +489,8 @@
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
             работоспособность покупки.
             Всякое бывает.</p>
-          <a class="map-link" href="#"><img src="img/map.png" alt="улица строителей 15" width="560" height="220"></a>
+          <a class="map-link" href="map.html"><img src="img/map.png" alt="улица строителей 15" width="560"
+              height="220"></a>
           <a class="button letter-link" href="writeus.html">напишите нам</a>
         </section>
       </div>
@@ -655,7 +663,7 @@
       <img src="img/map_big.jpg" width="960" height="559" alt="Москва, улица Строителей 15">
     </div>
   </section>
-  <script src="js/main_script.js"></script>
+  <script src="js/min_main_script.js"></script>
 </body>
 
 </html>
