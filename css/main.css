@@ -179,7 +179,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-top: 8px;
+  margin-top: 7px;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -1618,7 +1618,7 @@ input[type="radio"].visually-hidden {
 .bluetooth-rbtn {
   position: absolute;
 
-  margin-top: 20px;
+  margin-top: 17px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1695,7 +1695,7 @@ input[type="radio"].visually-hidden {
 
   display: flex;
   padding: 0;
-  padding-bottom: 75px;
+  padding-bottom: 78px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-flow: column;
@@ -1737,13 +1737,17 @@ input[type="radio"].visually-hidden {
   padding: 20px 0;
 }
 
+.sort-header h2{
+  padding-left: 3px;
+}
+
 .sort-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 760px;
   margin: 0;
-  margin-left: 75px;
+  margin-left: 70px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-flow: column;
@@ -1763,7 +1767,7 @@ input[type="radio"].visually-hidden {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 500px;
-  padding-left: 25px;
+  padding-left: 26px;
 }
 
 .sort-type li:not(:last-of-type) {
@@ -1911,7 +1915,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination {
-  margin-top: 21px;
+  margin-top: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
